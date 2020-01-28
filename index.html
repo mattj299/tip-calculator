@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example</title>
+<link rel="stylesheet" type="text/css" href="newProject.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculator-box">
+        <div class="header">
+            <div class="header-text">
+                TIP CALCULATOR
+            </div>
+        </div>
+        <div class="calc-padding">
+            <p>How much was your bill?</p>
+            <p>$ <input id="bill-amount" type="text" value="" placeholder="Bill Amount"></p>
+            <p>How was your service?</p>
+
+            <div class="clearfix">
+                <select id="service-select">
+                    <option value="" selected disabled>-- Choose an Option --</option>
+                    <option value="0.3">30% - Outstanding</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.15">15% - It was OK</option>
+                    <option value="0.10">10% - Bad</option>
+                    <option value="0.05">5% - Terrible</option>
+                </select>
+            </div>
+            
+            <p>How many people are sharing the bill?</p>
+            <p><input id="num-people" type="text" value="" placeholder="Number of People"> people</p>
+
+            <p><button class="calculate-button" onclick="calculateTip()" >CALCULATE!</button></p>
+            
+            <div id="tip-amount">
+                <h2>TIP AMOUNT</h2>
+                <h2 id="total-tip" ><span>$</span>0.00</h2>  
+                <h2 id="each-text" style="font-size: 1.25em;" >each</h2>  
+            </div>
+            
+        </div>
+    </div>
+
+    
+</div>
+
+
+</body>
+
+
+
+<script src="newProject.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
