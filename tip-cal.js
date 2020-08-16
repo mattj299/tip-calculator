@@ -6,6 +6,7 @@ var multiplePeople = document.getElementById("each-text");
 var calculateTip = () => {
 
     var serviceVal = service.options[service.selectedIndex];
+    console.log(billTotal);
 
     if (billTotal.value == "" || serviceVal.value == "" || numPeople.value == "")
     {
